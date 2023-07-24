@@ -1,3 +1,21 @@
 <resources>
     <string name="app_name">Hunger</string>
+    <string name="inspiration_for_your_first_order">Inspiration for your first order</string>
+    <string name="order_and_eat">Order and Eat</string>
+    <string name="hey_foodie">Hey Foodie!</string>
+    <string name="todo">TODO</string>
+    <string name="find_your_food">Find Your Food</string>
+    <string name="pizza">Pizza</string>
+    <string name="burger">Burger</string>
+    <string name="biryani">Biryani</string>
+    <string name="cake">Cake</string>
+    <string name="rolls">Rolls</string>
+    <string name="thali">Thali</string>
+    <string name="north_indian">North Indian</string>
+    <string name="chole_bhature">Chole Bhature</string>
+    <string name="chicken">Chicken</string>
+    <string name="noodles">Noodles</string>
+    <string name="dosa">Dosa</string>
+    <string name="pulav">Pulav</string>
+    <string name="top_brands_for_you">Top brands for you</string>
 </resources>

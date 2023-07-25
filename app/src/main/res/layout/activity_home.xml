@@ -585,11 +585,11 @@
                 android:orientation="vertical">
 
                 <androidx.cardview.widget.CardView
-                    android:layout_width="370dp"
+                    android:layout_width="385dp"
                     android:layout_height="370dp"
                     app:cardCornerRadius="20dp"
                     app:cardElevation="10dp"
-                    android:layout_marginStart="20dp">
+                    android:layout_marginStart="13dp">
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -600,9 +600,1004 @@
                             android:layout_height="230dp"
                             android:src="@drawable/biryanibykilo"
                             android:scaleType="centerCrop"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Biryani By Kilo"
+                            android:textSize="25dp"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginStart="8dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="North Indian, Biryani, Kebab, Ice Cream, Desserts"
+                            android:textSize="18dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginStart="8dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="₹600 for One"
+                            android:textSize="18dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginStart="8dp"/>
+
                     </LinearLayout>
+                    <Button
+                        android:layout_width="70dp"
+                        android:layout_height="40dp"
+                        android:text="Add"
+                        android:textSize="14dp"
+                        android:backgroundTint="#FF5722"
+                        android:layout_marginTop="320dp"
+                        android:layout_marginStart="280dp"/>
+
 
                 </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="385dp"
+                    android:layout_height="370dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="10dp"
+                    android:layout_marginStart="13dp"
+                    android:layout_marginTop="20dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="230dp"
+                            android:src="@drawable/i"
+                            android:scaleType="centerCrop"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Karim's"
+                            android:textSize="25dp"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginStart="5dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="North Indian, Kebab, Rolls, Mughlai, Biryani"
+                            android:textSize="15dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginStart="5dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="₹200 for One"
+                            android:textSize="15dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginStart="5dp"/>
+
+                    </LinearLayout>
+                    <Button
+                        android:layout_width="70dp"
+                        android:layout_height="40dp"
+                        android:text="Add"
+                        android:textSize="14dp"
+                        android:backgroundTint="#FF5722"
+                        android:layout_marginTop="320dp"
+                        android:layout_marginStart="280dp"/>
+
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="385dp"
+                    android:layout_height="370dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="10dp"
+                    android:layout_marginStart="13dp"
+                    android:layout_marginTop="20dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="230dp"
+                            android:src="@drawable/a"
+                            android:scaleType="centerCrop"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Bansooriwala"
+                            android:textSize="25dp"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginStart="5dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Mithai, Street Food, North Indian, Desserts"
+                            android:textSize="15dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginStart="5dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="₹150 for One"
+                            android:textSize="15dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginStart="5dp"/>
+
+                    </LinearLayout>
+                    <Button
+                        android:layout_width="70dp"
+                        android:layout_height="40dp"
+                        android:text="Add"
+                        android:textSize="14dp"
+                        android:backgroundTint="#FF5722"
+                        android:layout_marginTop="320dp"
+                        android:layout_marginStart="280dp"/>
+
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="385dp"
+                    android:layout_height="370dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="10dp"
+                    android:layout_marginStart="13dp"
+                    android:layout_marginTop="20dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="230dp"
+                            android:src="@drawable/b"
+                            android:scaleType="centerCrop"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="UBQ by Barbeque Nation"
+                            android:textSize="25dp"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginStart="5dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="BBQ, North Indian, Biryani, Kebab, Continental, Chinese, Beverages, Desserts"
+                            android:textSize="15dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginStart="5dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="₹100 for One"
+                            android:textSize="15dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginStart="5dp"/>
+
+                    </LinearLayout>
+                    <Button
+                        android:layout_width="70dp"
+                        android:layout_height="40dp"
+                        android:text="Add"
+                        android:textSize="14dp"
+                        android:backgroundTint="#FF5722"
+                        android:layout_marginTop="320dp"
+                        android:layout_marginStart="280dp"/>
+
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="385dp"
+                    android:layout_height="370dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="10dp"
+                    android:layout_marginStart="13dp"
+                    android:layout_marginTop="20dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="230dp"
+                            android:src="@drawable/c"
+                            android:scaleType="centerCrop"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Momo Shomo"
+                            android:textSize="25dp"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginStart="5dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Momos, Beverages, Desserts"
+                            android:textSize="15dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginStart="5dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="₹150 for One"
+                            android:textSize="15dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginStart="5dp"/>
+
+                    </LinearLayout>
+                    <Button
+                        android:layout_width="70dp"
+                        android:layout_height="40dp"
+                        android:text="Add"
+                        android:textSize="14dp"
+                        android:backgroundTint="#FF5722"
+                        android:layout_marginTop="320dp"
+                        android:layout_marginStart="280dp"/>
+
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="385dp"
+                    android:layout_height="370dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="10dp"
+                    android:layout_marginStart="13dp"
+                    android:layout_marginTop="20dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="230dp"
+                            android:src="@drawable/d"
+                            android:scaleType="centerCrop"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Ghee and Turmeric"
+                            android:textSize="25dp"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginStart="5dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="North Indian"
+                            android:textSize="15dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginStart="5dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="₹200 for One"
+                            android:textSize="15dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginStart="5dp"></TextView>
+
+                    </LinearLayout>
+                    <Button
+                        android:layout_width="70dp"
+                        android:layout_height="40dp"
+                        android:text="Add"
+                        android:textSize="14dp"
+                        android:backgroundTint="#FF5722"
+                        android:layout_marginTop="320dp"
+                        android:layout_marginStart="280dp"/>
+
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="385dp"
+                    android:layout_height="370dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="10dp"
+                    android:layout_marginStart="13dp"
+                    android:layout_marginTop="20dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="230dp"
+                            android:src="@drawable/e"
+                            android:scaleType="centerCrop"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="MOJO Pizza - 2X Toppings"
+                            android:textSize="25dp"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginStart="5dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Pizza, Fast Food, Desserts, Beverages"
+                            android:textSize="15dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginStart="5dp"></TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="₹400 for One"
+                            android:textSize="15dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginStart="5dp"></TextView>
+
+                    </LinearLayout>
+                    <Button
+                        android:layout_width="70dp"
+                        android:layout_height="40dp"
+                        android:text="Add"
+                        android:textSize="14dp"
+                        android:backgroundTint="#FF5722"
+                        android:layout_marginTop="320dp"
+                        android:layout_marginStart="280dp"/>
+
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="385dp"
+                    android:layout_height="370dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="10dp"
+                    android:layout_marginStart="13dp"
+                    android:layout_marginTop="20dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="230dp"
+                            android:src="@drawable/f"
+                            android:scaleType="centerCrop"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Baskin Robbins-Ice Cream"
+                            android:textSize="25dp"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginStart="5dp"></TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Ice Cream, Desserts"
+                            android:textSize="15dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginStart="5dp"></TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="₹100 for One"
+                            android:textSize="15dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginStart="5dp"></TextView>
+
+                    </LinearLayout>
+                    <Button
+                        android:layout_width="70dp"
+                        android:layout_height="40dp"
+                        android:text="Add"
+                        android:textSize="14dp"
+                        android:backgroundTint="#FF5722"
+                        android:layout_marginTop="320dp"
+                        android:layout_marginStart="280dp"/>
+
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="385dp"
+                    android:layout_height="370dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="10dp"
+                    android:layout_marginStart="13dp"
+                    android:layout_marginTop="20dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="230dp"
+                            android:src="@drawable/g"
+                            android:scaleType="centerCrop"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Barbeque Nation"
+                            android:textSize="25dp"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginStart="5dp"></TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="BBQ, North Indian, Biryani, Kebab, Continental, Chinese, Beverages, Desserts"
+                            android:textSize="15dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginStart="5dp"></TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="₹600 for One"
+                            android:textSize="15dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginStart="5dp"></TextView>
+
+                    </LinearLayout>
+                    <Button
+                        android:layout_width="70dp"
+                        android:layout_height="40dp"
+                        android:text="Add"
+                        android:textSize="14dp"
+                        android:backgroundTint="#FF5722"
+                        android:layout_marginTop="320dp"
+                        android:layout_marginStart="280dp"/>
+
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="385dp"
+                    android:layout_height="370dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="10dp"
+                    android:layout_marginStart="13dp"
+                    android:layout_marginTop="20dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="230dp"
+                            android:src="@drawable/h"
+                            android:scaleType="centerCrop"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Burger Singh"
+                            android:textSize="25dp"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginStart="5dp"></TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Burger, Fast Food, Momos, Beverages"
+                            android:textSize="15dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginStart="5dp"></TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="₹200 for One"
+                            android:textSize="15dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginStart="5dp"></TextView>
+
+                    </LinearLayout>
+                    <Button
+                        android:layout_width="70dp"
+                        android:layout_height="40dp"
+                        android:text="Add"
+                        android:textSize="14dp"
+                        android:backgroundTint="#FF5722"
+                        android:layout_marginTop="320dp"
+                        android:layout_marginStart="280dp"/>
+
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="385dp"
+                    android:layout_height="370dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="10dp"
+                    android:layout_marginStart="13dp"
+                    android:layout_marginTop="20dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="230dp"
+                            android:src="@drawable/j"
+                            android:scaleType="centerCrop"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Aggarwal Bikaneri Sweets And Restaurant"
+                            android:textSize="25dp"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginStart="5dp"></TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Mithai, Desserts, North Indian"
+                            android:textSize="15dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginStart="5dp"></TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="₹200 for One"
+                            android:textSize="15dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginStart="5dp"></TextView>
+
+                    </LinearLayout>
+                    <Button
+                        android:layout_width="70dp"
+                        android:layout_height="40dp"
+                        android:text="Add"
+                        android:textSize="14dp"
+                        android:backgroundTint="#FF5722"
+                        android:layout_marginTop="320dp"
+                        android:layout_marginStart="280dp"/>
+
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="385dp"
+                    android:layout_height="370dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="10dp"
+                    android:layout_marginStart="13dp"
+                    android:layout_marginTop="20dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="230dp"
+                            android:src="@drawable/k"
+                            android:scaleType="centerCrop"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Sagar Ratna"
+                            android:textSize="25dp"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginStart="5dp"></TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="North Indian, South Indian, Beverages"
+                            android:textSize="15dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginStart="5dp"></TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="₹200 for One"
+                            android:textSize="15dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginStart="5dp"></TextView>
+
+                    </LinearLayout>
+                    <Button
+                        android:layout_width="70dp"
+                        android:layout_height="40dp"
+                        android:text="Add"
+                        android:textSize="14dp"
+                        android:backgroundTint="#FF5722"
+                        android:layout_marginTop="320dp"
+                        android:layout_marginStart="280dp"/>
+
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="385dp"
+                    android:layout_height="370dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="10dp"
+                    android:layout_marginStart="13dp"
+                    android:layout_marginTop="20dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="230dp"
+                            android:src="@drawable/l"
+                            android:scaleType="centerCrop"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Biryani Blues"
+                            android:textSize="25dp"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginStart="5dp"></TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Biryani, Kebab, Desserts"
+                            android:textSize="15dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginStart="5dp"></TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="₹150 for One"
+                            android:textSize="15dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginStart="5dp"></TextView>
+
+                    </LinearLayout>
+                    <Button
+                        android:layout_width="70dp"
+                        android:layout_height="40dp"
+                        android:text="Add"
+                        android:textSize="14dp"
+                        android:backgroundTint="#FF5722"
+                        android:layout_marginTop="320dp"
+                        android:layout_marginStart="280dp"/>
+
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="385dp"
+                    android:layout_height="370dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="10dp"
+                    android:layout_marginStart="13dp"
+                    android:layout_marginTop="20dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="230dp"
+                            android:src="@drawable/m"
+                            android:scaleType="centerCrop"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="The Burger Club"
+                            android:textSize="25dp"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginStart="5dp"></TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Cafe, Coffee, Burger, Fast Food, Beverages"
+                            android:textSize="15dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginStart="5dp"></TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="₹200 for One"
+                            android:textSize="15dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginStart="5dp"></TextView>
+
+                    </LinearLayout>
+                    <Button
+                        android:layout_width="70dp"
+                        android:layout_height="40dp"
+                        android:text="Add"
+                        android:textSize="14dp"
+                        android:backgroundTint="#FF5722"
+                        android:layout_marginTop="320dp"
+                        android:layout_marginStart="280dp"/>
+
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="385dp"
+                    android:layout_height="370dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="10dp"
+                    android:layout_marginStart="13dp"
+                    android:layout_marginTop="20dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="230dp"
+                            android:src="@drawable/n"
+                            android:scaleType="centerCrop"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Subway"
+                            android:textSize="25dp"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginStart="5dp"></TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Burger, Fast Food, Momos, Beverages"
+                            android:textSize="15dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginStart="5dp"></TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="₹300 for One"
+                            android:textSize="15dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginStart="5dp"></TextView>
+
+                    </LinearLayout>
+                    <Button
+                        android:layout_width="70dp"
+                        android:layout_height="40dp"
+                        android:text="Add"
+                        android:textSize="14dp"
+                        android:backgroundTint="#FF5722"
+                        android:layout_marginTop="320dp"
+                        android:layout_marginStart="280dp"/>
+
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="385dp"
+                    android:layout_height="370dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="10dp"
+                    android:layout_marginStart="13dp"
+                    android:layout_marginTop="20dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="230dp"
+                            android:src="@drawable/o"
+                            android:scaleType="centerCrop"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Chiken Viken"
+                            android:textSize="25dp"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginStart="5dp"></TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Authentic Chicken Taste,North Indian"
+                            android:textSize="15dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginStart="5dp"></TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="₹400 for One"
+                            android:textSize="15dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginStart="5dp"></TextView>
+
+                    </LinearLayout>
+                    <Button
+                        android:layout_width="70dp"
+                        android:layout_height="40dp"
+                        android:text="Add"
+                        android:textSize="14dp"
+                        android:backgroundTint="#FF5722"
+                        android:layout_marginTop="320dp"
+                        android:layout_marginStart="280dp"/>
+
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="385dp"
+                    android:layout_height="370dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="10dp"
+                    android:layout_marginStart="13dp"
+                    android:layout_marginTop="20dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="230dp"
+                            android:src="@drawable/p"
+                            android:scaleType="centerCrop"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Burger King"
+                            android:textSize="25dp"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginStart="5dp"></TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Burger, Beverages"
+                            android:textSize="15dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginStart="5dp"></TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="₹250 for One"
+                            android:textSize="15dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginStart="5dp"></TextView>
+
+                    </LinearLayout>
+                    <Button
+                        android:layout_width="70dp"
+                        android:layout_height="40dp"
+                        android:text="Add"
+                        android:textSize="14dp"
+                        android:backgroundTint="#FF5722"
+                        android:layout_marginTop="320dp"
+                        android:layout_marginStart="280dp"/>
+
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="385dp"
+                    android:layout_height="370dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="10dp"
+                    android:layout_marginStart="13dp"
+                    android:layout_marginTop="20dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="230dp"
+                            android:src="@drawable/q"
+                            android:scaleType="centerCrop"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Pizza Hut"
+                            android:textSize="25dp"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginStart="5dp"></TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Pizza and many more"
+                            android:textSize="15dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginStart="5dp"></TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="₹300 for One"
+                            android:textSize="15dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginStart="5dp"></TextView>
+
+                    </LinearLayout>
+                    <Button
+                        android:layout_width="70dp"
+                        android:layout_height="40dp"
+                        android:text="Add"
+                        android:textSize="14dp"
+                        android:backgroundTint="#FF5722"
+                        android:layout_marginTop="320dp"
+                        android:layout_marginStart="280dp"/>
+
+
+                </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
             </LinearLayout>
 
 

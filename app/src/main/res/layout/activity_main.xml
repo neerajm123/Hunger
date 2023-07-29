@@ -18,7 +18,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/shourav_sheikh_xlfqx4psf94_unsplash"
-        tools:ignore="Missingconstraints" />
+        tools:ignore="ContentDescription,Missingconstraints" />
 
     <TextView
         android:layout_width="212dp"
@@ -32,7 +32,8 @@
         app:layout_constraintHorizontal_bias="0.08"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.024"></TextView>
+        app:layout_constraintVertical_bias="0.024"
+        tools:ignore="HardcodedText" />
 
     <androidx.cardview.widget.CardView
         android:id="@+id/card1"
@@ -50,11 +51,11 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Get Started"
-            android:textSize="30sp"
-            android:layout_marginLeft="70sp"
-            android:layout_marginTop="3sp"
-            android:textColor="@color/black"></TextView>
+            android:text="@string/get_started"
+            android:textSize="30dp"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="3dp"
+            android:textColor="@color/black"/>
     </androidx.cardview.widget.CardView>
 
 

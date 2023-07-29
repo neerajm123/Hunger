@@ -20,7 +20,7 @@
 
             <RelativeLayout
                 android:layout_width="wrap_content"
-                android:layout_height="85dp">
+                android:layout_height="@dimen/_85sdp">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -28,32 +28,33 @@
                     android:layout_alignParentStart="true"
                     android:layout_alignParentTop="true"
                     android:layout_alignParentBottom="true"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginTop="31dp"
-                    android:layout_marginBottom="26dp"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_28sdp"
+                    android:layout_marginBottom="@dimen/_26sdp"
                     android:text="@string/hey_foodie"
                     android:textColor="#EC440F"
-                    android:textSize="25sp"
+                    android:textSize="@dimen/_25sdp"
                     android:textStyle="bold" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginTop="62dp"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_62sdp"
                     android:text="@string/order_and_eat"
                     android:textColor="@color/black"
-                    android:textSize="15sp"
+                    android:textSize="@dimen/_15sdp"
                     android:textStyle="bold" />
 
                 <ImageView
+                    android:onClick="popup"
                     android:id="@+id/imageView3"
-                    android:layout_width="71dp"
-                    android:layout_height="67dp"
+                    android:layout_width="@dimen/_61sdp"
+                    android:layout_height="@dimen/_57sdp"
                     android:layout_alignParentStart="true"
                     android:layout_alignParentTop="true"
                     android:layout_alignParentBottom="true"
-                    android:layout_marginStart="350dp"
+                    android:layout_marginStart="310dp"
                     android:layout_marginTop="18dp"
                     android:layout_marginBottom="5dp"
                     android:contentDescription="@string/todo"
@@ -69,7 +70,7 @@
 
             <LinearLayout
                     android:layout_width="wrap_content"
-                    android:layout_height="105dp"
+                    android:layout_height="@dimen/_105sdp"
                     android:orientation="vertical">
 
                     <EditText
@@ -403,7 +404,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_horizontal"
-                            android:text="McDonald's"
+                            android:text="@string/mcdonald_s"
                             android:textStyle="bold"
                             android:textSize="22sp"/>
                     </LinearLayout>
@@ -423,7 +424,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_horizontal"
-                            android:text="Dominos's"
+                            android:text="@string/dominos_s"
                             android:textStyle="bold"
                             android:textSize="22sp"/>
                     </LinearLayout>
@@ -444,7 +445,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_horizontal"
-                            android:text="Burger King"
+                            android:text="@string/burger_king"
                             android:textStyle="bold"
                             android:textSize="22sp"/>
                     </LinearLayout>
@@ -465,7 +466,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_horizontal"
-                            android:text="Haldiram's"
+                            android:text="@string/haldiram_s"
                             android:textStyle="bold"
                             android:textSize="22sp"/>
                     </LinearLayout>
@@ -486,7 +487,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_horizontal"
-                            android:text="Subway"
+                            android:text="@string/subway"
                             android:textStyle="bold"
                             android:textSize="22sp"/>
                     </LinearLayout>
@@ -507,7 +508,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_horizontal"
-                            android:text="KFC"
+                            android:text="@string/kfc"
                             android:textStyle="bold"
                             android:textSize="22sp"/>
                     </LinearLayout>
@@ -528,7 +529,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_horizontal"
-                            android:text="Bikanervala"
+                            android:text="@string/bikanervala"
                             android:textStyle="bold"
                             android:textSize="22sp"/>
                     </LinearLayout>
@@ -549,7 +550,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_horizontal"
-                            android:text="Burger Singh"
+                            android:text="@string/burger_singh1"
                             android:textStyle="bold"
                             android:textSize="22sp"/>
                     </LinearLayout>
@@ -571,7 +572,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="50dp"
-                    android:text="What's on your mind"
+                    android:text="@string/what_s_on_your_mind"
                     android:textSize="22sp"
                     android:textStyle="bold"
                     android:textColor="@color/black"
@@ -589,56 +590,117 @@
                     android:layout_height="370dp"
                     app:cardCornerRadius="20dp"
                     app:cardElevation="10dp"
-                    android:layout_marginStart="13dp">
+                    android:layout_marginStart="13dp"
+                    tools:ignore="TooManyViews">
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
 
-                        <ImageView
+                        <ViewFlipper
                             android:layout_width="match_parent"
                             android:layout_height="230dp"
-                            android:src="@drawable/biryanibykilo"
-                            android:scaleType="centerCrop"/>
+                            android:autoStart="true"
+                            android:inAnimation="@android:anim/slide_in_left"
+                            android:outAnimation="@android:anim/slide_out_right"
+                            android:flipInterval="2000">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="230dp"
+                                android:src="@drawable/biryanibykilo"
+                                android:scaleType="centerCrop"
+                                tools:ignore="ContentDescription" />
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="230dp"
+                                android:src="@drawable/bbk1_0"
+                                android:scaleType="centerCrop"
+                                tools:ignore="ContentDescription" />
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="230dp"
+                                android:src="@drawable/bbk2_0"
+                                android:scaleType="centerCrop"
+                                tools:ignore="ContentDescription" />
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="230dp"
+                                android:src="@drawable/bbk3__0"
+                                android:scaleType="centerCrop"
+                                tools:ignore="ContentDescription" />
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="230dp"
+                                android:src="@drawable/bbk4_0"
+                                android:scaleType="centerCrop"
+                                tools:ignore="ContentDescription" />
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="230dp"
+                                android:src="@drawable/bbk5_0"
+                                android:scaleType="centerCrop"
+                                tools:ignore="ContentDescription" />
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="230dp"
+                                android:src="@drawable/bbk6_0"
+                                android:scaleType="centerCrop"
+                                tools:ignore="ContentDescription" />
+
+
+                        </ViewFlipper>
+
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Biryani By Kilo"
+                            android:text="@string/biryani_by_kilo"
                             android:textSize="25dp"
                             android:textStyle="bold"
                             android:textColor="@color/black"
                             android:layout_marginTop="15dp"
-                            android:layout_marginStart="8dp"/>
+                            android:layout_marginStart="8dp"
+                            tools:ignore="SpUsage" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="North Indian, Biryani, Kebab, Ice Cream, Desserts"
-                            android:textSize="18dp"
+                            android:text="@string/north_indian_biryani_kebab_ice_cream_desserts"
+                            android:textSize="15dp"
                             android:layout_marginTop="5dp"
-                            android:layout_marginStart="8dp"/>
+                            android:layout_marginStart="8dp"
+                            tools:ignore="SpUsage" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="₹600 for One"
-                            android:textSize="18dp"
+                            android:text="@string/_600_for_one"
+                            android:textSize="15dp"
                             android:layout_marginTop="5dp"
-                            android:layout_marginStart="8dp"/>
+                            android:layout_marginStart="8dp"
+                            tools:ignore="SpUsage" />
 
                     </LinearLayout>
                     <Button
                         android:layout_width="70dp"
                         android:layout_height="40dp"
-                        android:text="Add"
+                        android:text="@string/add"
                         android:textSize="14dp"
                         android:backgroundTint="#FF5722"
                         android:layout_marginTop="320dp"
-                        android:layout_marginStart="280dp"/>
+                        android:layout_marginStart="280dp"
+                        tools:ignore="SpUsage" />
 
 
                 </androidx.cardview.widget.CardView>
+
                 <androidx.cardview.widget.CardView
                     android:layout_width="385dp"
                     android:layout_height="370dp"
@@ -651,26 +713,66 @@
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
 
-                        <ImageView
+                        <ViewFlipper
                             android:layout_width="match_parent"
                             android:layout_height="230dp"
-                            android:src="@drawable/i"
-                            android:scaleType="centerCrop"/>
+                            android:autoStart="true"
+                            android:inAnimation="@android:anim/slide_in_left"
+                            android:outAnimation="@android:anim/slide_out_right"
+                            android:flipInterval="2000">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="230dp"
+                                android:src="@drawable/a"
+                                android:scaleType="centerCrop"/>
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="230dp"
+                                android:src="@drawable/bns1"
+                                android:scaleType="centerCrop"
+                                tools:ignore="ContentDescription" />
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="230dp"
+                                android:src="@drawable/bns2"
+                                android:scaleType="centerCrop"
+                                tools:ignore="ContentDescription" />
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="230dp"
+                                android:src="@drawable/bns4"
+                                android:scaleType="centerCrop"
+                                tools:ignore="ContentDescription" />
+
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="230dp"
+                                android:src="@drawable/bns5"
+                                android:scaleType="centerCrop"/>
+
+                        </ViewFlipper>
+
+
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Karim's"
+                            android:text="@string/bansooriwala"
                             android:textSize="25dp"
                             android:textStyle="bold"
                             android:textColor="@color/black"
                             android:layout_marginTop="15dp"
-                            android:layout_marginStart="5dp"/>
+                            android:layout_marginStart="5dp"
+                            tools:ignore="SpUsage" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="North Indian, Kebab, Rolls, Mughlai, Biryani"
+                            android:text="@string/mithai_street_food_north_indian_desserts"
                             android:textSize="15dp"
                             android:layout_marginTop="5dp"
                             android:layout_marginStart="5dp"/>
@@ -678,72 +780,17 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="₹200 for One"
+                            android:text="@string/_150_for_one1"
                             android:textSize="15dp"
                             android:layout_marginTop="5dp"
-                            android:layout_marginStart="5dp"/>
+                            android:layout_marginStart="5dp"
+                            tools:ignore="SpUsage" />
 
                     </LinearLayout>
                     <Button
                         android:layout_width="70dp"
                         android:layout_height="40dp"
-                        android:text="Add"
-                        android:textSize="14dp"
-                        android:backgroundTint="#FF5722"
-                        android:layout_marginTop="320dp"
-                        android:layout_marginStart="280dp"/>
-
-
-                </androidx.cardview.widget.CardView>
-                <androidx.cardview.widget.CardView
-                    android:layout_width="385dp"
-                    android:layout_height="370dp"
-                    app:cardCornerRadius="20dp"
-                    app:cardElevation="10dp"
-                    android:layout_marginStart="13dp"
-                    android:layout_marginTop="20dp">
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
-
-                        <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="230dp"
-                            android:src="@drawable/a"
-                            android:scaleType="centerCrop"/>
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Bansooriwala"
-                            android:textSize="25dp"
-                            android:textStyle="bold"
-                            android:textColor="@color/black"
-                            android:layout_marginTop="15dp"
-                            android:layout_marginStart="5dp"/>
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Mithai, Street Food, North Indian, Desserts"
-                            android:textSize="15dp"
-                            android:layout_marginTop="5dp"
-                            android:layout_marginStart="5dp"/>
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="₹150 for One"
-                            android:textSize="15dp"
-                            android:layout_marginTop="5dp"
-                            android:layout_marginStart="5dp"/>
-
-                    </LinearLayout>
-                    <Button
-                        android:layout_width="70dp"
-                        android:layout_height="40dp"
-                        android:text="Add"
+                        android:text="@string/add1"
                         android:textSize="14dp"
                         android:backgroundTint="#FF5722"
                         android:layout_marginTop="320dp"
@@ -772,25 +819,27 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="UBQ by Barbeque Nation"
+                            android:text="@string/ubq_by_barbeque_nation"
                             android:textSize="25dp"
                             android:textStyle="bold"
                             android:textColor="@color/black"
                             android:layout_marginTop="15dp"
-                            android:layout_marginStart="5dp"/>
+                            android:layout_marginStart="5dp"
+                            tools:ignore="SpUsage" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="BBQ, North Indian, Biryani, Kebab, Continental, Chinese, Beverages, Desserts"
+                            android:text="@string/bbq_north_indian_biryani_kebab_continental_chinese_beverages_desserts"
                             android:textSize="15dp"
                             android:layout_marginTop="5dp"
-                            android:layout_marginStart="5dp"/>
+                            android:layout_marginStart="5dp"
+                            tools:ignore="SpUsage" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="₹100 for One"
+                            android:text="@string/_100_for_one3"
                             android:textSize="15dp"
                             android:layout_marginTop="5dp"
                             android:layout_marginStart="5dp"/>
@@ -799,7 +848,7 @@
                     <Button
                         android:layout_width="70dp"
                         android:layout_height="40dp"
-                        android:text="Add"
+                        android:text="@string/add2"
                         android:textSize="14dp"
                         android:backgroundTint="#FF5722"
                         android:layout_marginTop="320dp"
@@ -828,7 +877,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Momo Shomo"
+                            android:text="@string/momo_shomo"
                             android:textSize="25dp"
                             android:textStyle="bold"
                             android:textColor="@color/black"
@@ -838,7 +887,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Momos, Beverages, Desserts"
+                            android:text="@string/momos_beverages_desserts"
                             android:textSize="15dp"
                             android:layout_marginTop="5dp"
                             android:layout_marginStart="5dp"/>
@@ -846,20 +895,22 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="₹150 for One"
+                            android:text="@string/_150_for_one"
                             android:textSize="15dp"
                             android:layout_marginTop="5dp"
-                            android:layout_marginStart="5dp"/>
+                            android:layout_marginStart="5dp"
+                            tools:ignore="SpUsage" />
 
                     </LinearLayout>
                     <Button
                         android:layout_width="70dp"
                         android:layout_height="40dp"
-                        android:text="Add"
+                        android:text="@string/add7"
                         android:textSize="14dp"
                         android:backgroundTint="#FF5722"
                         android:layout_marginTop="320dp"
-                        android:layout_marginStart="280dp"/>
+                        android:layout_marginStart="280dp"
+                        tools:ignore="SpUsage" />
 
 
                 </androidx.cardview.widget.CardView>
@@ -884,7 +935,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Ghee and Turmeric"
+                            android:text="@string/ghee_and_turmeric"
                             android:textSize="25dp"
                             android:textStyle="bold"
                             android:textColor="@color/black"
@@ -894,24 +945,25 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="North Indian"
+                            android:text="@string/north_indian1"
                             android:textSize="15dp"
                             android:layout_marginTop="5dp"
-                            android:layout_marginStart="5dp"/>
+                            android:layout_marginStart="5dp"
+                            tools:ignore="SpUsage" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="₹200 for One"
+                            android:text="@string/_200_for_one"
                             android:textSize="15dp"
                             android:layout_marginTop="5dp"
-                            android:layout_marginStart="5dp"></TextView>
+                            android:layout_marginStart="5dp"/>
 
                     </LinearLayout>
                     <Button
                         android:layout_width="70dp"
                         android:layout_height="40dp"
-                        android:text="Add"
+                        android:text="@string/add3"
                         android:textSize="14dp"
                         android:backgroundTint="#FF5722"
                         android:layout_marginTop="320dp"
@@ -950,10 +1002,10 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Pizza, Fast Food, Desserts, Beverages"
+                            android:text="@string/pizza_fast_food_desserts_beverages"
                             android:textSize="15dp"
                             android:layout_marginTop="5dp"
-                            android:layout_marginStart="5dp"></TextView>
+                            android:layout_marginStart="5dp"/>
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -961,7 +1013,8 @@
                             android:text="₹400 for One"
                             android:textSize="15dp"
                             android:layout_marginTop="5dp"
-                            android:layout_marginStart="5dp"></TextView>
+                            android:layout_marginStart="5dp"
+                            tools:ignore="SpUsage" />
 
                     </LinearLayout>
                     <Button
@@ -971,7 +1024,8 @@
                         android:textSize="14dp"
                         android:backgroundTint="#FF5722"
                         android:layout_marginTop="320dp"
-                        android:layout_marginStart="280dp"/>
+                        android:layout_marginStart="280dp"
+                        tools:ignore="SpUsage" />
 
 
                 </androidx.cardview.widget.CardView>
@@ -1001,29 +1055,29 @@
                             android:textStyle="bold"
                             android:textColor="@color/black"
                             android:layout_marginTop="15dp"
-                            android:layout_marginStart="5dp"></TextView>
+                            android:layout_marginStart="5dp"/>
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Ice Cream, Desserts"
+                            android:text="@string/ice_cream_desserts"
                             android:textSize="15dp"
                             android:layout_marginTop="5dp"
-                            android:layout_marginStart="5dp"></TextView>
+                            android:layout_marginStart="5dp"/>
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="₹100 for One"
+                            android:text="@string/_100_for_one"
                             android:textSize="15dp"
                             android:layout_marginTop="5dp"
-                            android:layout_marginStart="5dp"></TextView>
+                            android:layout_marginStart="5dp"/>
 
                     </LinearLayout>
                     <Button
                         android:layout_width="70dp"
                         android:layout_height="40dp"
-                        android:text="Add"
+                        android:text="@string/add4"
                         android:textSize="14dp"
                         android:backgroundTint="#FF5722"
                         android:layout_marginTop="320dp"
@@ -1047,7 +1101,8 @@
                             android:layout_width="match_parent"
                             android:layout_height="230dp"
                             android:src="@drawable/g"
-                            android:scaleType="centerCrop"/>
+                            android:scaleType="centerCrop"
+                            tools:ignore="ContentDescription" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -1057,7 +1112,8 @@
                             android:textStyle="bold"
                             android:textColor="@color/black"
                             android:layout_marginTop="15dp"
-                            android:layout_marginStart="5dp"></TextView>
+                            android:layout_marginStart="5dp"
+                            tools:ignore="SpUsage" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -1065,7 +1121,8 @@
                             android:text="BBQ, North Indian, Biryani, Kebab, Continental, Chinese, Beverages, Desserts"
                             android:textSize="15dp"
                             android:layout_marginTop="5dp"
-                            android:layout_marginStart="5dp"></TextView>
+                            android:layout_marginStart="5dp"
+                            tools:ignore="SpUsage" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -1073,7 +1130,8 @@
                             android:text="₹600 for One"
                             android:textSize="15dp"
                             android:layout_marginTop="5dp"
-                            android:layout_marginStart="5dp"></TextView>
+                            android:layout_marginStart="5dp"
+                            tools:ignore="SpUsage" />
 
                     </LinearLayout>
                     <Button
@@ -1083,7 +1141,8 @@
                         android:textSize="14dp"
                         android:backgroundTint="#FF5722"
                         android:layout_marginTop="320dp"
-                        android:layout_marginStart="280dp"/>
+                        android:layout_marginStart="280dp"
+                        tools:ignore="SpUsage" />
 
 
                 </androidx.cardview.widget.CardView>
@@ -1108,20 +1167,20 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Burger Singh"
+                            android:text="@string/burger_singh"
                             android:textSize="25dp"
                             android:textStyle="bold"
                             android:textColor="@color/black"
                             android:layout_marginTop="15dp"
-                            android:layout_marginStart="5dp"></TextView>
+                            android:layout_marginStart="5dp"/>
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Burger, Fast Food, Momos, Beverages"
+                            android:text="@string/burger_fast_food_momos_beverages"
                             android:textSize="15dp"
                             android:layout_marginTop="5dp"
-                            android:layout_marginStart="5dp"></TextView>
+                            android:layout_marginStart="5dp"/>
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -1129,7 +1188,7 @@
                             android:text="₹200 for One"
                             android:textSize="15dp"
                             android:layout_marginTop="5dp"
-                            android:layout_marginStart="5dp"></TextView>
+                            android:layout_marginStart="5dp"/>
 
                     </LinearLayout>
                     <Button
@@ -1139,7 +1198,8 @@
                         android:textSize="14dp"
                         android:backgroundTint="#FF5722"
                         android:layout_marginTop="320dp"
-                        android:layout_marginStart="280dp"/>
+                        android:layout_marginStart="280dp"
+                        tools:ignore="SpUsage" />
 
 
                 </androidx.cardview.widget.CardView>
@@ -1164,12 +1224,12 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Aggarwal Bikaneri Sweets And Restaurant"
+                            android:text="@string/aggarwal_bikaneri_sweets_and_restaurant"
                             android:textSize="25dp"
                             android:textStyle="bold"
                             android:textColor="@color/black"
                             android:layout_marginTop="15dp"
-                            android:layout_marginStart="5dp"></TextView>
+                            android:layout_marginStart="5dp"/>
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -1177,15 +1237,17 @@
                             android:text="Mithai, Desserts, North Indian"
                             android:textSize="15dp"
                             android:layout_marginTop="5dp"
-                            android:layout_marginStart="5dp"></TextView>
+                            android:layout_marginStart="5dp"
+                            tools:ignore="SpUsage" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="₹200 for One"
+                            android:text="@string/_200_for_one1"
                             android:textSize="15dp"
                             android:layout_marginTop="5dp"
-                            android:layout_marginStart="5dp"></TextView>
+                            android:layout_marginStart="5dp"
+                            tools:ignore="SpUsage" />
 
                     </LinearLayout>
                     <Button
@@ -1225,15 +1287,15 @@
                             android:textStyle="bold"
                             android:textColor="@color/black"
                             android:layout_marginTop="15dp"
-                            android:layout_marginStart="5dp"></TextView>
+                            android:layout_marginStart="5dp"/>
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="North Indian, South Indian, Beverages"
+                            android:text="@string/north_indian_south_indian_beverages"
                             android:textSize="15dp"
                             android:layout_marginTop="5dp"
-                            android:layout_marginStart="5dp"></TextView>
+                            android:layout_marginStart="5dp"/>
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -1241,7 +1303,8 @@
                             android:text="₹200 for One"
                             android:textSize="15dp"
                             android:layout_marginTop="5dp"
-                            android:layout_marginStart="5dp"></TextView>
+                            android:layout_marginStart="5dp"
+                            tools:ignore="SpUsage" />
 
                     </LinearLayout>
                     <Button
@@ -1281,23 +1344,25 @@
                             android:textStyle="bold"
                             android:textColor="@color/black"
                             android:layout_marginTop="15dp"
-                            android:layout_marginStart="5dp"></TextView>
+                            android:layout_marginStart="5dp"/>
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Biryani, Kebab, Desserts"
+                            android:text="@string/biryani_kebab_desserts"
                             android:textSize="15dp"
                             android:layout_marginTop="5dp"
-                            android:layout_marginStart="5dp"></TextView>
+                            android:layout_marginStart="5dp"
+                            tools:ignore="SpUsage" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="₹150 for One"
+                            android:text="@string/_150_for_one2"
                             android:textSize="15dp"
                             android:layout_marginTop="5dp"
-                            android:layout_marginStart="5dp"></TextView>
+                            android:layout_marginStart="5dp"
+                            tools:ignore="SpUsage" />
 
                     </LinearLayout>
                     <Button
@@ -1337,7 +1402,7 @@
                             android:textStyle="bold"
                             android:textColor="@color/black"
                             android:layout_marginTop="15dp"
-                            android:layout_marginStart="5dp"></TextView>
+                            android:layout_marginStart="5dp"/>
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -1345,7 +1410,7 @@
                             android:text="Cafe, Coffee, Burger, Fast Food, Beverages"
                             android:textSize="15dp"
                             android:layout_marginTop="5dp"
-                            android:layout_marginStart="5dp"></TextView>
+                            android:layout_marginStart="5dp"/>
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -1353,13 +1418,13 @@
                             android:text="₹200 for One"
                             android:textSize="15dp"
                             android:layout_marginTop="5dp"
-                            android:layout_marginStart="5dp"></TextView>
+                            android:layout_marginStart="5dp"/>
 
                     </LinearLayout>
                     <Button
                         android:layout_width="70dp"
                         android:layout_height="40dp"
-                        android:text="Add"
+                        android:text="@string/add6"
                         android:textSize="14dp"
                         android:backgroundTint="#FF5722"
                         android:layout_marginTop="320dp"
@@ -1393,7 +1458,7 @@
                             android:textStyle="bold"
                             android:textColor="@color/black"
                             android:layout_marginTop="15dp"
-                            android:layout_marginStart="5dp"></TextView>
+                            android:layout_marginStart="5dp"/>
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -1401,7 +1466,8 @@
                             android:text="Burger, Fast Food, Momos, Beverages"
                             android:textSize="15dp"
                             android:layout_marginTop="5dp"
-                            android:layout_marginStart="5dp"></TextView>
+                            android:layout_marginStart="5dp"
+                            tools:ignore="SpUsage" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -1409,7 +1475,7 @@
                             android:text="₹300 for One"
                             android:textSize="15dp"
                             android:layout_marginTop="5dp"
-                            android:layout_marginStart="5dp"></TextView>
+                            android:layout_marginStart="5dp"/>
 
                     </LinearLayout>
                     <Button
@@ -1439,7 +1505,8 @@
                             android:layout_width="match_parent"
                             android:layout_height="230dp"
                             android:src="@drawable/o"
-                            android:scaleType="centerCrop"/>
+                            android:scaleType="centerCrop"
+                            tools:ignore="ContentDescription" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -1449,7 +1516,7 @@
                             android:textStyle="bold"
                             android:textColor="@color/black"
                             android:layout_marginTop="15dp"
-                            android:layout_marginStart="5dp"></TextView>
+                            android:layout_marginStart="5dp"/>
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -1457,7 +1524,7 @@
                             android:text="Authentic Chicken Taste,North Indian"
                             android:textSize="15dp"
                             android:layout_marginTop="5dp"
-                            android:layout_marginStart="5dp"></TextView>
+                            android:layout_marginStart="5dp"/>
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -1465,13 +1532,13 @@
                             android:text="₹400 for One"
                             android:textSize="15dp"
                             android:layout_marginTop="5dp"
-                            android:layout_marginStart="5dp"></TextView>
+                            android:layout_marginStart="5dp"/>
 
                     </LinearLayout>
                     <Button
                         android:layout_width="70dp"
                         android:layout_height="40dp"
-                        android:text="Add"
+                        android:text="@string/add5"
                         android:textSize="14dp"
                         android:backgroundTint="#FF5722"
                         android:layout_marginTop="320dp"
@@ -1505,7 +1572,7 @@
                             android:textStyle="bold"
                             android:textColor="@color/black"
                             android:layout_marginTop="15dp"
-                            android:layout_marginStart="5dp"></TextView>
+                            android:layout_marginStart="5dp"/>
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -1513,7 +1580,7 @@
                             android:text="Burger, Beverages"
                             android:textSize="15dp"
                             android:layout_marginTop="5dp"
-                            android:layout_marginStart="5dp"></TextView>
+                            android:layout_marginStart="5dp"/>
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -1521,7 +1588,7 @@
                             android:text="₹250 for One"
                             android:textSize="15dp"
                             android:layout_marginTop="5dp"
-                            android:layout_marginStart="5dp"></TextView>
+                            android:layout_marginStart="5dp"/>
 
                     </LinearLayout>
                     <Button
@@ -1561,7 +1628,7 @@
                             android:textStyle="bold"
                             android:textColor="@color/black"
                             android:layout_marginTop="15dp"
-                            android:layout_marginStart="5dp"></TextView>
+                            android:layout_marginStart="5dp"/>
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -1569,7 +1636,7 @@
                             android:text="Pizza and many more"
                             android:textSize="15dp"
                             android:layout_marginTop="5dp"
-                            android:layout_marginStart="5dp"></TextView>
+                            android:layout_marginStart="5dp"/>
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -1577,7 +1644,7 @@
                             android:text="₹300 for One"
                             android:textSize="15dp"
                             android:layout_marginTop="5dp"
-                            android:layout_marginStart="5dp"></TextView>
+                            android:layout_marginStart="5dp"/>
 
                     </LinearLayout>
                     <Button
@@ -1600,6 +1667,9 @@
 
             </LinearLayout>
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="500dp"/>
 
         </LinearLayout>
     </ScrollView>
@@ -1629,7 +1699,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/ic_outline_shopping_cart_24"
-        app:layout_anchor="@id/appbar"></com.google.android.material.floatingactionbutton.FloatingActionButton>
+        app:layout_anchor="@id/appbar"/>
 
 
 

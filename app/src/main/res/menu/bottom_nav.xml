@@ -9,6 +9,9 @@
         android:icon="@drawable/ic_outline_shopping_cart_24"
         android:title="Cart"/>
 
+    <item android:id="@+id/placeholder"
+            android:title=""/>
+
     <item android:id="@+id/newset"
         android:icon="@drawable/ic_baseline_settings_24"
         android:title="Settings"/>
